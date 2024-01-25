@@ -1,0 +1,38 @@
+.yellowCircle {
+    width: 40px;
+    height: 40px;
+    background-color: #ffc815;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    left: -10px;
+    /* vertical-align: middle; */
+}
+
+.yellowCircle::before {
+    content: "HELLO,";
+    color: #292929;
+    position: absolute;
+    top: 10px;
+    right: 5px; /* Adjust this value to position the text above the circle */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.yellowCircle::after {
+    content: "THERE";
+    color: #292929;
+    position: absolute;
+    top: 10px;
+    right: 5px; /* Adjust this value to position the text above the circle */
+    /* left: 50%; */
+    transform: translateX(180%);
+}
+
+.blueCircle::after {
+    content: " ";
+    width: 40px;
+    height: 40px;
+    background-color: #ffc815;
+}
+
