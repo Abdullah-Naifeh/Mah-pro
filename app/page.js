@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <main className="flex flex-col md:flex-row h-[91vh]">
-        <div className="h-[100%] w-[100%] md:h-[100%] md:w-[30%] bg-[#3CB2C9]">
-          <Image className="object-contain h-[100%]" src={img}></Image>
+      <main className="flex flex-col lg:flex-row">
+        <div className=" flex w-full lg:w-2/5 bg-[#3CB2C9]">
+          <Image className="items-end mx-auto" src={img}></Image>
         </div>
         <div className="w-[100%] md:w-[70%]">
           <div className="flex flex-col justify-start md:justify-center items-start md:h-[91vh] px-5 py-8 md:px-24">
