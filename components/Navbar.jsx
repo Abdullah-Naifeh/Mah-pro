@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -15,22 +16,46 @@ export default function Navbar() {
       <div>
         <ul className="hidden md:flex flex-col md:flex-row justify-around text-white text-[16px]">
           <li className="md:mr-8">
-            <a href="http://">HOME</a>
+            <Link href="/">HOME</Link>
           </li>
           <li className="md:mr-8">
-            <a href="http://">ABOUT US</a>
+            <Link href="/about">ABOUT US</Link>
           </li>
           <li className="md:mr-8">
-            <a href="http://">RESUME</a>
+            <Link href="/resume">RESUME</Link>
           </li>
           <li className="md:mr-8">
-            <a href="http://">PORTFOLIO</a>
+            <Link href="/portfolio">PORTFOLIO</Link>
           </li>
           <li className="md:mr-8">
-            <a href="http://">CONTACT ME</a>
+            <Link href="/contact">CONTACT ME</Link>
           </li>
         </ul>
       </div>
+
+      {clicked ? (
+        <div>
+          <ul className="flex flex-col md:flex-row justify-around text-white text-[16px]">
+            <li className="md:mr-8">
+              <Link href="/">HOME</Link>
+            </li>
+            <li className="md:mr-8">
+              <Link href="/about">ABOUT US</Link>
+            </li>
+            <li className="md:mr-8">
+              <Link href="http://">RESUME</Link>
+            </li>
+            <li className="md:mr-8">
+              <Link href="http://">PORTFOLIO</Link>
+            </li>
+            <li className="md:mr-8">
+              <Link href="/Contact">CONTACT ME</Link>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        ""
+      )}
 
       <button
         onClick={() => {
@@ -46,30 +71,6 @@ export default function Navbar() {
         <span className="bg-white w-9 h-[2px] my-2"></span>
         <span className="bg-white w-6 h-[2px]"></span>
       </button>
-
-      {clicked ? (
-                <div>
-                <ul className="flex flex-col md:flex-row justify-around text-white text-[16px]">
-                  <li className="md:mr-8">
-                    <a href="/page.js">HOME</a>
-                  </li>
-                  <li className="md:mr-8">
-                    <a href="http://">ABOUT US</a>
-                  </li>
-                  <li className="md:mr-8">
-                    <a href="http://">RESUME</a>
-                  </li>
-                  <li className="md:mr-8">
-                    <a href="http://">PORTFOLIO</a>
-                  </li>
-                  <li className="md:mr-8">
-                    <a href="http://">CONTACT ME</a>
-                  </li>
-                </ul>
-              </div>
-      ) : (
-        ""
-      )}
     </nav>
   );
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Navbar from "../components/Navbar";
-import img from "../public/person.png"
+import Navbar from "@/components/Navbar";
+import img from "@/public/person.png"
 import "@/styles/main.css"
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar/>
       <main className="flex flex-col lg:flex-row">
         <div className=" flex w-full lg:w-2/5 bg-[#3CB2C9]">
-          <Image className="items-end mx-auto" src={img}></Image>
+          <Image className="items-end mx-auto" src={img} width="auto"></Image>
         </div>
         <div className="w-[100%] md:w-[70%]">
           <div className="flex flex-col justify-start md:justify-center items-start md:h-[91vh] px-5 py-8 md:px-24">
