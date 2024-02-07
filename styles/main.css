@@ -1,3 +1,5 @@
+/* home page */
+
 .yellowCircle {
     width: 40px;
     height: 40px;
@@ -34,4 +36,12 @@
     width: 40px;
     height: 40px;
     background-color: #ffc815;
+}
+
+/* About me page */
+
+/* who I AM text style */
+.skew{
+    transform: skew(-20deg);
+    font-size: "Work Sans" , sans-serif;
 }
