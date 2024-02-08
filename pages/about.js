@@ -4,7 +4,11 @@ import "@/styles/main.css";
 import "tailwindcss/tailwind.css";
 import aboutImg from "../public/aboutImg.jpg";
 import photo from "../public/myPic.jpg";
-import rulerIcon from "@icon/themify-icons/icons/ti-ruler-pencil"
+import icon from "../assets/icons/agenda.svg";
+import cameraIcon from "../assets/icons/camera.svg";
+// import thumbsUpIcon from "../assets/icons/thumbs-up.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenNib } from '@fortawesome/free-solid-svg-icons';
 
 export default function about() {
   return (
@@ -37,7 +41,9 @@ export default function about() {
             </div>
             <div className="flex flex-col ">
               <div>
-                <h1 className="text-[22px] text-[#292929] font-semibold leading-4">I'm Muhammad Mahjoub</h1>
+                <h1 className="text-[22px] text-[#292929] font-semibold leading-4">
+                  I'm Muhammad Mahjoub
+                </h1>
                 <p className="mt-[15px] mb-8 text-[#878c9f] leading-7 font-normal text-base">
                   A Sudanese citizen and inventor who holds two patents in
                   engineering and technology. My interests in educating children
@@ -49,20 +55,124 @@ export default function about() {
                 </p>
               </div>
               <div className="flex">
-                <div className="flex">
-                  <div>
-                    <Image src={rulerIcon} /> 
+                <div className="flex flex-1">
+                  <div className="min-w-[29px] mr-5">
+                    <Image src={icon} height={29} />
                   </div>
                   <div className="flex flex-col">
-                  <h3>Development</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-3">
+                      Development
+                    </h3>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt.
+                    </p>
                   </div>
                 </div>
-                <div>graphic</div>
+                <div className="flex flex-1">
+                  <div className="min-w-[29px] mr-5">
+                    <Image src={icon} height={29} />
+                  </div>
+                  <div className="flex flex-col">
+                    <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-3">
+                      Development
+                    </h3>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
               </div>
               <div className="flex">
-                <div>web design</div>
-                <div>moile apps</div>
+                <div className="flex flex-1">
+                  <div className="min-w-[29px] mr-5">
+                    <Image src={icon} height={29} />
+                  </div>
+                  <div className="flex flex-col">
+                    <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-3">
+                      Development
+                    </h3>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-1">
+                  <div className="min-w-[29px] mr-5">
+                    <Image src={icon} height={29} />
+                  </div>
+                  <div className="flex flex-col">
+                    <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-3">
+                      Development
+                    </h3>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-center items-center w-full">
+            <button className="border-solid rounded-md bg-[#FFC815] text-[#fff] py-3 px-[22px] text-[13px] leading-5 tracking-[2px] shadow-lg mt-5 hover:bg-black">
+              <a>DOWNLOAD CV</a>
+            </button>
+          </div>
+          {/* Conter Row */}
+          <div className="flex mt-[50px] pt-10 border-t-[1px] border-[#ddd] w-full">
+            <div className="flex flex-1">
+              <div className="min-w-[29px] mr-1">
+                <Image src={icon} height={29} />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-[6px]">
+                  643
+                </h3>
+                <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                  HAPPY CLIENTS
+                </p>
+              </div>
+            </div>{" "}
+            <div className="flex flex-1">
+              <div className="min-w-[29px] mr-1">
+                <Image src={icon} height={29} />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-[6px]">
+                  255
+                </h3>
+                <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                  TELEPHONIC TALK
+                </p>
+              </div>
+            </div>{" "}
+            <div className="flex flex-1">
+              <div className="min-w-[29px] mr-1">
+                <Image src={cameraIcon} height={29} />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-[6px]">
+                  375
+                </h3>
+                <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                  PHOTO CAPTURE
+                </p>
+              </div>
+            </div>{" "}
+            <div className="flex flex-1">
+              <div className="min-w-[29px] mr-1">
+              <FontAwesomeIcon icon={faPenNib} />
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-[#292929] text-[18px] leading-[25px] font-normal mb-[6px]">
+                  375
+                </h3>
+                <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
+                  PROJECTS
+                </p>
               </div>
             </div>
           </div>
