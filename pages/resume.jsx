@@ -6,7 +6,6 @@ import resumeImg from "../public/title-2.jpg";
 import photo from "../public/myPic.jpg";
 import icon from "../assets/icons/agenda.svg";
 import cameraIcon from "../assets/icons/camera.svg";
-// import thumbsUpIcon from "../assets/icons/thumbs-up.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
@@ -36,35 +35,15 @@ export default function about() {
             <h2 className="text-[30px] md:text-[45px] text-[#292929] font-bold">MY RESUME</h2>
           </div>
           <div className="flex flex-col md:flex-row">
-            {/* <div className="relative pr-0 md:pr-8 object-cover min-w-[245px] min-h-[390px]">
-              <Image src={photo} quality={100} />
-            </div> */}
             <div className="flex">
-              {/* <div className="mt-8 md:mt-0">
-                <h1 className="text-[22px] text-[#292929] font-semibold leading-4">
-                  I'm Muhammad Mahjoub
-                </h1>
-                <p className="mt-[15px] mb-8 text-[#878c9f] leading-7 font-normal text-base">
-                  A Sudanese citizen and inventor who holds two patents in
-                  engineering and technology. My interests in educating children
-                  began when he entered the university stage, and he was called
-                  "the children's inspiration", a title that spread in various
-                  media outlets as a result of his invaluable contributions to
-                  teaching children programming, robotics, and artificial
-                  intelligence.
-                </p>
-              </div> */}
-              {/* Feature boxes */}
-              <div className="flex flex-col flex-1">
+              {/* Experience colmun */}
+              <div className="flex flex-col flex-1 px-4">
                 <div className="flex flex-1 mb-8 md:mb-0">
-                  <div className="min-w-[29px] mr-5">
-                    <Image src={icon} height={29} />
-                  </div>
                   <div className="flex flex-col">
                     <h3 className="text-[#292929] text-[18px] leading-[25px] font-medium mb-2 md:mb-3">
                     Experience
                     </h3>
-                    <div className="border">
+                    <div className="border border-b-4 mb-6">
                     <div className="flex flex-col border-b py-3 px-4">
                         <div className="flex">
                             <div className="bg-[#FFC815] rounded-full mr-3 h-7 w-7"><Image src={faBriefcase}/></div>
@@ -81,47 +60,63 @@ export default function about() {
                   </div>
                 </div>
                 <div className="flex flex-1 mb-8 md:mb-0">
-                  <div className="min-w-[29px] mr-5">
-                    <Image src={icon} height={29} />
-                  </div>
                   <div className="flex flex-col">
-                    <h3 className="text-[#292929] text-[18px] leading-[25px] font-medium mb-2 md:mb-3">
-                      Development
-                    </h3>
-                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt.
+                    <div className="border border-b-4 mb-6">
+                    <div className="flex flex-col border-b py-3 px-4">
+                        <div className="flex">
+                            <div className="bg-[#FFC815] rounded-full mr-3 h-7 w-7"><Image src={faBriefcase}/></div>
+                            <div className="flex flex-col">
+                                <h5 className="text-[16px] text-[#292929] font-medium">Google</h5>
+                                <span className="text-[12px] text-[#878c9f] font-normal">OCT 2015 - JUNE 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left py-4 px-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col flex-1">
+              {/* education colmun */}
+              <div className="flex flex-col flex-1 px-4">
                 <div className="flex flex-1 mb-8 md:mb-0">
-                  <div className="min-w-[29px] mr-5">
-                    <Image src={icon} height={29} />
-                  </div>
                   <div className="flex flex-col">
                     <h3 className="text-[#292929] text-[18px] leading-[25px] font-medium mb-2 md:mb-3">
-                      Development
+                    Education
                     </h3>
-                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt.
+                    <div className="border border-b-4 mb-6">
+                    <div className="flex flex-col border-b py-3 px-4">
+                        <div className="flex">
+                            <div className="bg-[#FFC815] rounded-full mr-3 h-7 w-7"><Image src={faBriefcase}/></div>
+                            <div className="flex flex-col">
+                                <h5 className="text-[16px] text-[#292929] font-medium">Google</h5>
+                                <span className="text-[12px] text-[#878c9f] font-normal">OCT 2015 - JUNE 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left py-4 px-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
+                    </div>
                   </div>
                 </div>
                 <div className="flex flex-1 mb-8 md:mb-0">
-                  <div className="min-w-[29px] mr-5">
-                    <Image src={icon} height={29} />
-                  </div>
                   <div className="flex flex-col">
-                    <h3 className="text-[#292929] text-[18px] leading-[25px] font-medium mb-2 md:mb-3">
-                      Development
-                    </h3>
-                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt.
+                    <div className="border border-b-4 mb-6">
+                    <div className="flex flex-col border-b py-3 px-4">
+                        <div className="flex">
+                            <div className="bg-[#FFC815] rounded-full mr-3 h-7 w-7"><Image src={faBriefcase}/></div>
+                            <div className="flex flex-col">
+                                <h5 className="text-[16px] text-[#292929] font-medium">Google</h5>
+                                <span className="text-[12px] text-[#878c9f] font-normal">OCT 2015 - JUNE 2016</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left py-4 px-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     </p>
+                    </div>
                   </div>
                 </div>
               </div>
