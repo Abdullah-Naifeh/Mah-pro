@@ -15,7 +15,7 @@ export default function about() {
     <div className="h-screen">
       <Navbar />
       <main className="flex flex-col lg:flex-row h-screen">
-        <div className="hidden md:flex items-end w-full lg:w-2/5 h-screen relative pt-32">
+        <div className="hidden lg:flex items-end w-full lg:w-2/5 h-screen relative pt-32">
           <Image
             className="object-cover"
             layout="fill"
@@ -26,7 +26,7 @@ export default function about() {
             <h1 className="text-white text-4xl ml-4 mb-4">ABOUT ME</h1>
           </div>
         </div>
-        <div className="flex flex-col items-start w-[100%] md:w-[80%] max-h-screen overflow-x-hidden pt-28     px-5 md:px-12 pb-12 ">
+        <div className="flex flex-col items-start w-[100%] lg:w-[80%] max-h-screen overflow-x-hidden pt-28 px-5 md:px-12 pb-12 ">
           <div className="mb-9">
             <div className="bg-[#FFC815] text-center	skew">
               <h5 className="text-[11px] text-[#292929] font-semibold  leading-5 tracking-[3px] ">

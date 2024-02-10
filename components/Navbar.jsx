@@ -43,10 +43,10 @@ export default function Navbar() {
               <Link href="/about">ABOUT US</Link>
             </li>
             <li className="md:mr-8">
-              <Link href="http://">RESUME</Link>
+              <Link href="/resume">RESUME</Link>
             </li>
             <li className="md:mr-8">
-              <Link href="http://">PORTFOLIO</Link>
+              <Link href="/portfolio">PORTFOLIO</Link>
             </li>
             <li className="md:mr-8">
               <Link href="/Contact">CONTACT ME</Link>
