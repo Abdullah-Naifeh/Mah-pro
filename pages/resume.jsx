@@ -11,7 +11,7 @@ import { faPenNib, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
 export default function about() {
   return (
-    <div className="h-screen">
+    <div className="overflow-hidden h-screen">
       <Navbar />
       <main className="flex flex-col lg:flex-row h-screen">
         <div className="hidden lg:flex items-end w-full lg:w-2/5 h-screen relative pt-32">

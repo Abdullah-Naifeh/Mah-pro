@@ -2,18 +2,32 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import "./navbar.css";
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
-  return (
-    <nav className="absolute top-0 left-0 right-0 flex justify-between items-center bg-[#FFC815] z-50">
-      <div className="py-1 px-4">
-        <h1 className="text-white text-xl font-semibold leading-[50px]">
-          LOGO
-        </h1>
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
+  const genericHamburgerLine = `h-[2px] my-1 bg-white transition ease transform duration-300`;
 
-      <div>
+  function toggleClicked() {
+    if (clicked === false) {
+      console.log("false");
+      setClicked(true);
+    } else {
+      console.log("true");
+      setClicked(false);
+    }
+  }
+  return (
+    <>
+      <nav className="w-full sm:max-w-80 absolute top-0 right-0 flex justify-between items-center bg-[#FFC815] z-50">
+        <div className="py-1 px-4">
+          <h1 className="text-white text-xl font-semibold leading-[50px]">
+            LOGO
+          </h1>
+        </div>
+
+        {/* <div>
         <ul className="hidden md:flex flex-col md:flex-row justify-around text-white text-[16px]">
           <li className="md:mr-8">
             <Link href="/">HOME</Link>
@@ -31,11 +45,32 @@ export default function Navbar() {
             <Link href="/contact">CONTACT ME</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
 
-      {clicked ? (
-        <div>
-          <ul className="flex flex-col md:flex-row justify-around text-white text-[16px]">
+        <button
+          className="flex flex-col justify-center items-center bg-black h-[60px] w-[60px]"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div
+            className={`w-6 ${genericHamburgerLine} ${
+              isOpen ? "rotate-45 translate-y-3 w-[32px]" : ""
+            }`}
+          />
+          <div
+            className={`w-9 ${genericHamburgerLine} ${
+              isOpen ? "opacity-0" : ""
+            }`}
+          />
+          <div
+            className={`w-6 ${genericHamburgerLine} ${
+              isOpen ? "-rotate-45 -translate-y-[8px] w-[32px]" : ""
+            }`}
+          />
+        </button>
+      </nav>
+      {/* {isOpen ? ( */}
+        <div className={`absolute right-0 -top-[60px] w-full sm:w-80 transition ease-in-out duration-500 ${isOpen ? "translate-y-[120px]" : ""}`}>
+          <ul className="flex flex-col justify-around items-center text-white bg-[#FFC815] text-[16px] ">
             <li className="md:mr-8">
               <Link href="/">HOME</Link>
             </li>
@@ -53,24 +88,9 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-      ) : (
+      {/* ) : (
         ""
-      )}
-
-      <button
-        onClick={() => {
-          if (clicked == false) {
-            setClicked(true);
-          } else {
-            setClicked(false);
-          }
-        }}
-        className="md:hidden flex flex-col justify-center items-center bg-black w-[60px] h-[60px] cursor-pointer"
-      >
-        <span className="bg-white w-6 h-[2px]"></span>
-        <span className="bg-white w-9 h-[2px] my-2"></span>
-        <span className="bg-white w-6 h-[2px]"></span>
-      </button>
-    </nav>
+      )} */}
+    </>
   );
 }
