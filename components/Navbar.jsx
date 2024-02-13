@@ -5,19 +5,8 @@ import Link from "next/link";
 import "./navbar.css";
 
 export default function Navbar() {
-  const [clicked, setClicked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const genericHamburgerLine = `h-[2px] my-1 bg-white transition ease transform duration-300`;
-
-  function toggleClicked() {
-    if (clicked === false) {
-      console.log("false");
-      setClicked(true);
-    } else {
-      console.log("true");
-      setClicked(false);
-    }
-  }
   return (
     <>
       <nav className="w-full sm:max-w-80 absolute top-0 right-0 flex justify-between items-center bg-[#FFC815] z-50">
@@ -26,27 +15,6 @@ export default function Navbar() {
             LOGO
           </h1>
         </div>
-
-        {/* <div>
-        <ul className="hidden md:flex flex-col md:flex-row justify-around text-white text-[16px]">
-          <li className="md:mr-8">
-            <Link href="/">HOME</Link>
-          </li>
-          <li className="md:mr-8">
-            <Link href="/about">ABOUT US</Link>
-          </li>
-          <li className="md:mr-8">
-            <Link href="/resume">RESUME</Link>
-          </li>
-          <li className="md:mr-8">
-            <Link href="/portfolio">PORTFOLIO</Link>
-          </li>
-          <li className="md:mr-8">
-            <Link href="/contact">CONTACT ME</Link>
-          </li>
-        </ul>
-      </div> */}
-
         <button
           className="flex flex-col justify-center items-center bg-black h-[60px] w-[60px]"
           onClick={() => setIsOpen(!isOpen)}
@@ -68,29 +36,25 @@ export default function Navbar() {
           />
         </button>
       </nav>
-      {/* {isOpen ? ( */}
-        <div className={`absolute right-0 -top-[60px] w-full sm:w-80 transition ease-in-out duration-500 ${isOpen ? "translate-y-[120px]" : ""}`}>
+        <div className={`absolute right-0 -top-[225px] w-full sm:w-80 transition ease-in-out duration-500 ${isOpen ? "translate-y-[285px]" : ""}`}>
           <ul className="flex flex-col justify-around items-center text-white bg-[#FFC815] text-[16px] ">
-            <li className="md:mr-8">
+            <li className="mb-8">
               <Link href="/">HOME</Link>
             </li>
-            <li className="md:mr-8">
+            <li className="mb-8">
               <Link href="/about">ABOUT US</Link>
             </li>
-            <li className="md:mr-8">
+            <li className="mb-8">
               <Link href="/resume">RESUME</Link>
             </li>
-            <li className="md:mr-8">
+            <li className="mb-8">
               <Link href="/portfolio">PORTFOLIO</Link>
             </li>
-            <li className="md:mr-8">
+            <li className="mb-8">
               <Link href="/Contact">CONTACT ME</Link>
             </li>
           </ul>
         </div>
-      {/* ) : (
-        ""
-      )} */}
     </>
   );
 }
