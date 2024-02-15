@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      <main className="flex flex-col lg:flex-row md:h-screen">
-        <div className=" flex items-end w-full lg:w-2/5 bg-[#3CB2C9] min-h-full mt-[60px] md:mt-0">
-          <Image className="mx-auto" src={img} alt="the website owner image" style={{ width: "auto", height: "85%" }} ></Image>
+      <main className="flex flex-col lg:flex-row h-screen">
+        <div className=" flex items-end w-full lg:w-2/5 bg-[#3CB2C9] min-h-full ">
+          <Image className="mx-auto" src={img} alt="the website owner image" style={{ width: "auto", height: "75%" }} ></Image>
         </div>
         <div className="flex justify-center w-[100%] md:w-[70%]">
           <div className="flex flex-col justify-start md:justify-center items-start  px-5 py-8 md:px-24 w-full">
