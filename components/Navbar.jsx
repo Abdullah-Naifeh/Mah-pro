@@ -36,7 +36,7 @@ export default function Navbar() {
           />
         </button>
       </nav>
-        <div className={`absolute right-0 -top-[225px] w-full sm:w-80 transition ease-in-out duration-500 ${isOpen ? "translate-y-[285px]" : ""}`}>
+        <div className={`z-[49] absolute right-0 -top-[225px] w-full sm:w-80 transition ease-in-out duration-500 ${isOpen ? "translate-y-[285px]" : ""}`}>
           <ul className="flex flex-col justify-around items-center text-white bg-[#FFC815] text-[16px] ">
             <li className="mb-8">
               <Link href="/">HOME</Link>
