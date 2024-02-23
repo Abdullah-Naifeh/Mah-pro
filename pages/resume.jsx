@@ -122,25 +122,14 @@ export default function about() {
               </div>
             </div>
           </div>
-          <div className="flex justify-start md:justify-center items-center w-full"> 
-            <button className="border-solid rounded-md bg-[#FFC815] text-[#fff] py-3 px-[22px] text-[13px] leading-5 tracking-[2px] shadow-lg mt-5 hover:bg-black">
-              <a>DOWNLOAD CV</a>
-            </button>
+          {/* progress section */}
+          <div className="mt-8">
+            <h2>MY SKILLS</h2>
           </div>
-          {/* Counter Row */}
-          <div className="flex flex-col md:flex-row mt-[50px] pt-10 border-t-[1px] border-[#ddd] w-full">
+          <div className="flex flex-col mt-[50px] pt-10 border-t-[1px] border-[#ddd] w-full">
             <div className="flex flex-1 my-4 md:my-0">
-              <div className="min-w-[29px] mr-1">
-                <Image src={icon} height={29} />
-              </div>
-              <div className="flex flex-col">
-                <h3 className="text-[#292929] text-[18px] leading-[25px] font-medium md:mb-[6px]">
-                  643
-                </h3>
-                <p className="text-[#878c9f] text-[14px] leading-[25px] font-normal antialiased  text-left">
-                  HAPPY CLIENTS
-                </p>
-              </div>
+              <label for="html">HTML</label>
+              <progress id="html" value="32" max="100"> 32% </progress>
             </div>{" "}
             <div className="flex flex-1 my-4 md:my-0">
               <div className="min-w-[29px] mr-1">
