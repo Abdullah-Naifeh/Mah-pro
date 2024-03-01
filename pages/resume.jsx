@@ -36,8 +36,8 @@ export default function about() {
               MY RESUME
             </h2>
           </div>
-          <div className="flex flex-col md:flex-row">
-            <div className="flex">
+          <div className="flex">
+            <div className="flex flex-col sm:flex-row">
               {/* Experience colmun */}
               <div className="flex flex-col flex-1 px-4">
                 <div className="flex flex-1 mb-8 md:mb-0">
