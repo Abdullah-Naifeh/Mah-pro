@@ -166,27 +166,37 @@ export default function about() {
           </div>
           {/* progress section */}
           <div className="mt-8">
-            <h2>MY SKILLS</h2>
+            <h2 className="text-[#292929] text-[22px] leading-6 font-semibold">
+              MY SKILLS
+            </h2>
           </div>
           <div className="flex flex-col sm:flex-row mt-[10px] pt-8 border-t-[1px] border-[#ddd] w-full">
             <div className="flex-1">
-              <h2 className="mb-5">Design skills</h2>
+              <h2 className="mb-5 text-[#292929] text-[16px] leading-5 font-medium">
+                Design skills
+              </h2>
               <div className="flex flex-col flex-1 mb-5">
-                <label className="mb-[6px]" for="html">CORAL DRAW</label>
+                <label className="mb-[6px] font-medium text-[#333333] leading-4 text-[12px]" for="html">
+                  CORAL DRAW
+                </label>
                 <progress id="html" value="92" max="100">
                   {" "}
                   32%{" "}
                 </progress>
               </div>{" "}
               <div className="flex flex-col flex-1 mb-5">
-                <label className="mb-[6px]" for="html">PHOTOSHOP</label>
+                <label className="mb-[6px] font-medium text-[#333333] leading-4 text-[12px]" for="html">
+                  PHOTOSHOP
+                </label>
                 <progress id="html" value="85" max="100">
                   {" "}
                   32%{" "}
                 </progress>
               </div>
               <div className="flex flex-col flex-1 mb-5">
-                <label className="mb-[6px]" for="html">ILLUSTRATOR</label>
+                <label className="mb-[6px] font-medium text-[#333333] leading-4 text-[12px]" for="html">
+                  ILLUSTRATOR
+                </label>
                 <progress id="html" value="82" max="100">
                   {" "}
                   32%{" "}
@@ -194,23 +204,31 @@ export default function about() {
               </div>
             </div>
             <div className="flex-1">
-              <h2 className="mb-5">Coding skills</h2>
+              <h2 className="mb-5 text-[#292929] text-[16px] leading-5 font-medium">
+                Coding skills
+              </h2>
               <div className="flex flex-col flex-1 mb-5">
-                <label className="mb-[6px]" for="html">HTML5</label>
+                <label className="mb-[6px] font-medium text-[#333333] leading-4 text-[12px]" for="html">
+                  HTML5
+                </label>
                 <progress id="html" value="92" max="100">
                   {" "}
                   32%{" "}
                 </progress>
               </div>{" "}
               <div className="flex flex-col flex-1 mb-5">
-                <label className="mb-[6px]" for="html">CSS3</label>
+                <label className="mb-[6px] font-medium text-[#333333] leading-4 text-[12px]" for="html">
+                  CSS3
+                </label>
                 <progress id="html" value="85" max="100">
                   {" "}
                   32%{" "}
                 </progress>
               </div>
               <div className="flex flex-col flex-1 mb-5">
-                <label className="mb-[6px]" for="html">JAVASCRIPT</label>
+                <label className="mb-[6px] font-medium text-[#333333] leading-4 text-[12px]" for="html">
+                  JAVASCRIPT
+                </label>
                 <progress id="html" value="82" max="100">
                   {" "}
                   32%{" "}
